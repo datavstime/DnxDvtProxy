@@ -4,7 +4,7 @@ using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 
-namespace MojoProxy
+namespace DataVsTime
 {
     public class RequestHandler
     {
@@ -14,7 +14,7 @@ namespace MojoProxy
         {
             ctx.Response.StatusCode = 200;
 
-            // Response is cached in a MemoryStream first rather than writing directly to ctx.Response.Body 
+            // Response is cached in a MemoryStream first rather than writing directly to ctx.Response.Body
             // so that a 501 can be sent in the event of an exception.
             using (var ms = new MemoryStream())
             {

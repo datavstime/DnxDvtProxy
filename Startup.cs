@@ -7,7 +7,7 @@ using Microsoft.Framework.Configuration;
 using Microsoft.Framework.DependencyInjection;
 using Newtonsoft.Json;
 
-namespace MojoProxy
+namespace DataVsTime
 {
     public class Startup
     {

@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using System.Threading.Tasks;
 
 
-namespace MojoProxy
+namespace DataVsTime
 {
 	public interface IAdapter
 	{
