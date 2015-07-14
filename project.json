@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0-*",
+
+  "description": "A proxy/adapter for supplying data to datavstime.com",
+
+  "dependencies": {
+    "Microsoft.Framework.Logging": "1.0.0-beta5",
+    "Microsoft.Framework.Logging.Console": "1.0.0-beta5",
+    "Microsoft.Net.Http.Server": "1.0.0-beta5",
+    "Microsoft.AspNet.Server.IIS": "1.0.0-beta5",
+    "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
+    "Microsoft.Framework.Configuration": "1.0.0-beta5",
+    "Microsoft.Framework.Configuration.Json": "1.0.0-beta5",
+    "Kestrel": "1.0.0-beta5",
+    "Newtonsoft.Json": "5.0.8",
+    "LightweightInfluxDb": "1.7.0"
+  },
+
+  "commands": {
+    "web": "Microsoft.AspNet.Hosting --server Microsoft.AspNet.Server.WebListener --server.urls http://localhost:5100",
+    "kestrel": "Microsoft.AspNet.Hosting --server Kestrel --server.urls http://localhost:5101"
+  },
+
+  "frameworks": {
+    "dnx451": { }
+  }
+}

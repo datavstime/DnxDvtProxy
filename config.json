@@ -1,0 +1,16 @@
+{
+  "Adapter": {
+    "Type": "InfluxDb",
+    "Configuration": {
+      "Host": "http://hostname:port/",
+      "Database": "dbname",
+      "Usename": "username",
+      "Password": "password",
+      "Timeout_ms": "10000",
+      "DataFillHack_ms": 60000
+    }
+  },
+
+  "PredefinedPages": [
+  ]
+}
